@@ -1,0 +1,213 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --ink: #25333a;
+  --line: #34434b;
+  --blue: #23a9de;
+  --html: #e4472d;
+  --css: #1189c5;
+  --js: #65b91e;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  font-family: Arial, Helvetica, sans-serif;
+  background: #e7eaeb;
+  background-image: url("/imagenes/fondo.jpg");
+}
+
+.site-shell {
+  min-height: 100vh;
+  padding: 28px 16px;
+  background: linear-gradient(135deg, #eef1f2, #dfe7e9);
+}
+
+.infographic {
+  width: 980px;
+  margin: 0 auto;
+  padding: 38px 48px 54px;
+  background-color: #eaf6f7;
+  background-image: url("imagenes/fondo.jpg");
+  border: 1px solid #c3d4d8;
+  box-shadow: 0 18px 50px rgba(32,63,73,.18);
+}
+
+.hero-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #38494e;
+}
+
+.logo {
+  width: 170px;
+  display: block;
+  border-radius: 50%;
+}
+
+h1 {
+  margin: 0;
+  color: #1aa3d8;
+  font-size: 4rem;
+  text-shadow: 2px 2px 0 white, 0 2px 4px #668b95;
+}
+
+h2 {
+  margin: 0 0 12px;
+  font-size: 1.2rem;
+  font-style: italic;
+  text-decoration: underline;
+}
+
+h3 {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.15;
+}
+
+p {
+  margin: 0 0 8px;
+  line-height: 1.45;
+  font-size: .94rem;
+}
+
+.author-line {
+  display: flex;
+  justify-content: flex-end;
+  padding: 14px 0 22px;
+  border-bottom: 2px solid #38494e;
+}
+
+.author-line span {
+  padding: 4px 9px;
+  background: #fff;
+  border-radius: 2px;
+  font-size: .74rem;
+  font-style: italic;
+  box-shadow: 0 1px 4px #0003;
+}
+
+.intro {
+  padding: 26px 0 20px;
+}
+
+.content-section {
+  margin-top: 14px;
+  padding-top: 4px;
+}
+
+.card-grid {
+  display: flex;
+  gap: 12px;
+  padding: 12px;
+  border: 2px solid var(--line);
+  background: #eaf5f4aa;
+}
+
+.info-card,
+.house-card {
+  flex: 1;
+  min-width: 0;
+  padding: 12px 11px 14px;
+  background: #f7e8e5cc;
+  border: 1px solid #83959a;
+  box-shadow: 3px 4px 5px #5e6f7533;
+}
+
+.info-card.css,
+.house-card.css {
+  background: #e4eef3cc;
+}
+
+.info-card.js,
+.house-card.js {
+  background: #e9efdccc;
+}
+
+.info-card h3,
+.house-card h3 {
+  margin: -1px -1px 14px;
+  padding: 8px 9px;
+  color: #fff;
+  text-align: center;
+  font-size: .88rem;
+}
+
+.info-card.html h3,
+.house-card.html h3 {
+  background: var(--html);
+}
+
+.info-card.css h3,
+.house-card.css h3 {
+  background: var(--css);
+}
+
+.info-card.js h3,
+.house-card.js h3 {
+  background: var(--js);
+}
+
+.code-badge {
+  display: grid;
+  place-items: center;
+  width: 76px;
+  height: 76px;
+  margin: 18px auto 0;
+  background: white;
+  border: 8px solid white;
+  font-size: 1.1rem;
+  font-weight: 900;
+  text-align: center;
+}
+
+.info-card img {
+  width: 80px;
+  display: block;
+  margin: 0 auto;
+}
+
+.house-grid {
+  margin-top: 10px;
+}
+
+.card-subtitle {
+  margin-bottom: 12px;
+  font-style: italic;
+}
+
+.house-card p {
+  font-size: .86rem;
+}
+
+.casa-img {
+  width: 400px;;
+  display: block;
+  margin: 0 auto;
+  margin-top: 18px;
+  margin-bottom: 18px;
+  box-shadow: 12px 12px 12px #52636b44;
+}
+
+.summary {
+  padding-top: 18px;
+  border-top: 2px solid var(--line);
+}
+
+.summary p {
+  padding: 16px;
+  background: white;
+  border: 1px solid #87979b;
+  box-shadow: 3px 4px 6px #52636b44;
+  text-align: center;
+  font-style: italic;
+}
